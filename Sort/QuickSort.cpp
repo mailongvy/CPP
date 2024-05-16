@@ -105,8 +105,7 @@ int main() {
     srand(time(NULL));
     for (int i = 0; i < n; i++)
     {
-        a[i] = rand() % 1000;
-
+        a[i] = rand() % 10;
     }
     Test(a, n);
     system("pause");

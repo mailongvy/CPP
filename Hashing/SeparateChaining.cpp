@@ -23,7 +23,7 @@ public:
     Hashing(int m) : count(0) 
     {
         table.resize(m);
-        for (int  i = 0; i < m; i++)
+        for (int i = 0; i < m; i++)
         {
             table[i] = NULL;
         }
@@ -44,9 +44,6 @@ int Hashing::HashFunction(int &key) {
 
 void Hashing::InsertNode(node *&data) {
     int index = HashFunction(data->key);
-    if(index >= table.size()) {
-        table.push_back(data);
-    }
     if (table[index] == NULL)
     {
         table[index] = data;
