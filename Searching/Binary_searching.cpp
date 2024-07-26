@@ -92,7 +92,7 @@ int main() {
         cin >> a[i];
     }
     cout << first_pos(a, 0, n - 1, x);
-    
+    system("pause");
     
     
     return 0;

@@ -111,5 +111,6 @@ int main() {
     system("pause");
     quicksort2(a, 0, n - 1);
     Test(a, n);
+    system("pause");
     return 0;
 }
